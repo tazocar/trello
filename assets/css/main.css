@@ -22,18 +22,20 @@ header{
 	display: inline-block;
 }
 .list-div{
-	width: 20%;
+	width: 250px;
 	display: inline-block;
 	vertical-align: text-top;
 	padding: 5px;
+	margin: 5px;
 }
 .list-div-active{
-	width: 20%;
+	width: 250px;
 	display: inline-block;
 	vertical-align: text-top;
 	background: #E2E4E6;
 	border-radius: 5px;
 	padding: 5px;
+	margin: 5px;
 }
 .input-start{
 	width: 100%;
@@ -92,13 +94,17 @@ header{
 	color: #2F3437;
 }
 
-ol{
+.list-div-active ol{
 	list-style: none;
 	margin: 0;
 	padding:0;
 }
-li{
+.list-div-active li{
 	background: grey;
 	outline: 1px solid red;
 	padding: 10px;
+}
+.f-left{
+	float: left;
+	overflow: hidden;
 }
