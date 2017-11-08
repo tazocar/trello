@@ -1,10 +1,11 @@
 body{
-	background-color: #347CC5;
+	background-color: #0079BF;
+	margin: 0;
 }
 header{
 	width: 100%;
 	height: 50px;
-	background: #2A6CAA;
+	background: #0067A3;
 }
 #top-banner{
 	height: 50px;
@@ -20,25 +21,78 @@ header{
 	display: inline-block;
 }
 .list-div{
-	width: 19.74%;
-	outline:1px solid green;
+	width: 20%;
 	display: inline-block;
 	vertical-align: text-top;
-	background: green;
-	height: auto;
+	padding: 5px;
 }
-.list-div input{
-	width: 100%;
-	outline:1px solid green;
-	box-sizing: border-box;
-}
-.list-div button{
-	background: red;
-	border:none;
-	color:black;
+.list-div-active{
+	width: 20%;
 	display: inline-block;
-	padding: 10px;|
+	vertical-align: text-top;
+	background: #E2E4E6;
+	border-radius: 5px;
+	padding: 5px;
 }
+.input-start{
+	width: 100%;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+	padding: 10px;
+	display: block;
+	background: #0067A3;
+	border-radius: 5px;
+}
+.input-start::-webkit-input-placeholder { /* Chrome */
+  color: #FFF;
+}
+
+.input-focus{
+	background: #D6D8DA;
+	box-shadow: inset 0px 0px 7px 0px #b2b2b2;
+	border:1px solid #AAAAAA;
+	color: #313131;
+}
+.input-focus::-webkit-input-placeholder { /* Chrome */
+  color: #545454;
+}
+
+.btn-save{
+	margin-top: 5px;
+	border:none;
+	color: #FFF;
+	background: #5AAC44;
+	border-radius: 6px;
+	display: inline-block;
+	padding: 12px;
+	box-sizing: border-box;
+	vertical-align: 4px;
+	cursor: pointer;
+	font-weight: bolder;
+	transition: background ease .3s;
+	outline: none;
+}
+.btn-save:hover{
+	background: #519839;
+}
+
+
+.fa.fa-times{
+	margin-left: 20px;
+	font-size: 1.6em;
+	cursor: pointer;
+	box-sizing: border-box;
+	clear: both;
+	color: #6e7981;
+	transition: color ease .3s;
+
+}
+.fa.fa-times:hover{
+	color: #2F3437;
+}
+
+
 ol{
 	list-style: none;
 	margin: 0;
@@ -47,11 +101,5 @@ ol{
 li{
 	background: grey;
 	outline: 1px solid red;
-	padding: 10px;
-}
-
-.test{
-	background-color: red;
-	border: none;
 	padding: 10px;
 }
