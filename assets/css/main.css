@@ -2,8 +2,13 @@ body{
 	background-color: #0079BF;
 	margin: 0;
 	white-space: nowrap;
+	font-family: 'arial';
 }
 header{
+	position: fixed;
+	width: 100%;
+}
+#blue-top{
 	width: 100%;
 	height: 50px;
 	background: #0067A3;
@@ -27,13 +32,45 @@ header{
 	vertical-align: text-top;
 	padding: 5px;
 	margin: 5px;
+	white-space: normal;
+	word-break: break-all;
+}
+.list-div p{
+	background: #FFF;
+	box-shadow: 0px .3px 0px #888888;
+	border-radius: 2px;
+	padding: 6px;
+	font-size: .9em;
+	color: #313131;
+	margin: 7px 3px;
+}
+.list-div h4{
+	font-size: .9em;
+	padding: 5px;
+	margin: 0;
+
+}
+.list-div-active a{
+	width: 100%;
+	padding: 6px 0;
+	display: block;
+	box-sizing: border-box;
+	text-align: center;
+	text-decoration: none;
+	color: #9BA1A6;
+	transition: all ease .3s;
+
+}
+.list-div-active a:hover{
+	background-color: #CDD2D4;
+	color: #5f6268;
 }
 .list-div-active{
 	width: 250px;
 	display: inline-block;
 	vertical-align: text-top;
 	background: #E2E4E6;
-	border-radius: 5px;
+	border-radius: 4px;
 	padding: 5px;
 	margin: 5px;
 }
@@ -45,7 +82,7 @@ header{
 	padding: 10px;
 	display: block;
 	background: #0067A3;
-	border-radius: 5px;
+	border-radius: 4px;
 }
 .input-start::-webkit-input-placeholder { /* Chrome */
   color: #FFF;
@@ -66,28 +103,31 @@ header{
 	border:none;
 	color: #FFF;
 	background: #5AAC44;
-	border-radius: 6px;
+	border-radius: 3px;
 	display: inline-block;
-	padding: 12px;
+	padding: 8px 12px;
 	box-sizing: border-box;
 	vertical-align: 4px;
 	cursor: pointer;
 	font-weight: bolder;
 	transition: background ease .3s;
 	outline: none;
+	box-shadow:  1px 1px 0px #519839;
 }
 .btn-save:hover{
 	background: #519839;
 }
 
 .fa.fa-times{
-	margin-left: 20px;
 	font-size: 1.6em;
 	cursor: pointer;
 	box-sizing: border-box;
+	overflow: hidden;
 	clear: both;
 	color: #6e7981;
 	transition: color ease .3s;
+	vertical-align: -4px;
+	padding-left: 150px;
 
 }
 .fa.fa-times:hover{
@@ -107,4 +147,21 @@ header{
 .f-left{
 	float: left;
 	overflow: hidden;
+}
+#text{
+	width: 243px;
+	display: block;
+	outline: none;
+	font-family: 'arial';
+	resize: none;
+}
+.break-long-words {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+  word-break: break-word;
+  hyphens: auto;
+}
+#lists-container{
+	padding: 100px 0 0 5px;
 }
