@@ -52,7 +52,7 @@ btnSave.addEventListener("click", function(){
 		//crear link
 		var addCardLink = document.createElement("a");
 		addCardLink.setAttribute("href", "#");
-		var textCardLink = document.createTextNode("Añadir una tarjeta");
+		var textCardLink = document.createTextNode("Añadir una tarjeta...");
 		//uno los hijos
 		addCardLink.appendChild(textCardLink);
 		listDiv.appendChild(titleH);
@@ -138,7 +138,7 @@ btnSave.addEventListener("click", function(){
 			};
 		});
 	} else {
-		alert(":o parece que intentas crear una lista está vacía, n ose puede trabajar así!");
+		alert(":o parece que intentas crear una lista está vacía, no se puede trabajar así!");
 	}
 });
 

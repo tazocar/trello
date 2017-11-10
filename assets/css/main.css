@@ -8,23 +8,148 @@ header{
 	position: fixed;
 	width: 100%;
 }
+header img{
+	height: 25px;
+	position: absolute;
+	top: 7px;
+	left: 48%;
+	opacity: .5;
+	transition: opacity ease .3s;
+	cursor: pointer;
+}
+header img:hover{
+	opacity: .85;
+}
 #blue-top{
 	width: 100%;
-	height: 50px;
+	height: 40px;
 	background: #0067A3;
+	color: #FFF;
+	padding: 5px 15px;
+	box-sizing: border-box;
 }
+#tableros{
+	font-size: 1.1em;
+	background-color: #4d95bf;
+	padding:4px 7px;
+	border-radius: 3px;
+	display: inline-block;
+	cursor:pointer;
+	transition: background ease .3s;
+}
+#tableros:hover{
+	background-color: #3386B5;
+}
+#tableros p{
+	margin:0 5px;
+	font-size: .8em;
+	font-weight: bolder;
+	display: inline-block;
+}
+#searchDiv{
+	display: inline-block;
+	position: relative;
+}
+#search{
+	border:none;
+	outline: none;
+	height: 26.5px;
+	width: 180px;
+	background-color: #4d95bf;
+	border-radius: 3px;
+	vertical-align: 1.2px;
+	margin-left: 5px;
+	transition: background ease .3s;
+}
+#search:hover{
+	background-color: #66A4C7;
+}
+#searchDiv .fa.fa-search{
+	position: absolute;
+	/*flip*/
+	transform: scaleX(-1);
+	right: 8px;
+	top: 5px;
+	cursor: pointer;
+}
+#icons{
+	display: inline-block;
+	float: right;
+}
+#icons .fa{
+	background-color:#4d95bf; 
+	width: 26.5px;
+	height: 26.5px;
+	text-align: center;
+	line-height: 1.8em;
+	border-radius: 3px;
+	margin-left: 5px;
+	transition: background ease .3s;
+	cursor: pointer;
+}
+#icons .fa:hover{
+	background-color: #3386B5;
+}
+#userPhoto{
+	width: 26.5px;
+	height: 26.5px;
+	border-radius: 50%;
+	background-image: url(../img/userPhoto.jpg);
+	background-size: 40px;
+	background-position: 45% 10%;
+	display: inline-block;
+	vertical-align: -7px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
 #top-banner{
-	height: 50px;
-	outline: 1px solid black;
+	height: 46px;
 	color:#FFF;
 }
 #top-banner h3{
-	margin:0;
+	border-radius: 3px;
+	cursor: pointer;
 	display: inline-block;
+	font-size: 1.1em;
+	height: 30px;
+	line-height:  1.8em;
+	margin:8px 0 0 10px;
+	padding: 0 10px;
+}
+#top-banner h3:hover{
+	background-color: #006AA8;
 }
 #top-banner p{
 	margin:0;
 	display: inline-block;
+	font-size: .9em;
+	border-radius: 3px;
+	padding: 7.5px 11px;
+	cursor: pointer;
+}
+#top-banner p:last-child{
+	text-decoration: underline;
+	float: right;
+	clear: both;
+	overflow: hidden;
+	margin: 8px 10px 0 0;
+}
+.fa-ellipsis-h{
+	margin-right: 5px;
+}
+#top-banner p:hover{
+	background-color: #006AA8;
+
+}
+#top-banner .fa.fa-star-o{
+	font-size: .8em;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 3px;
+}
+#top-banner .fa.fa-star-o:hover{
+	background-color: #006AA8;
 }
 .list-div{
 	width: 250px;
@@ -52,13 +177,13 @@ header{
 }
 .list-div-active a{
 	width: 100%;
-	padding: 6px 0;
+	padding: 6px;
 	display: block;
 	box-sizing: border-box;
-	text-align: center;
 	text-decoration: none;
 	color: #9BA1A6;
 	transition: all ease .3s;
+	font-size: .9em;
 
 }
 .list-div-active a:hover{
@@ -163,5 +288,5 @@ header{
   hyphens: auto;
 }
 #lists-container{
-	padding: 100px 0 0 5px;
+	padding: 80px 0 0 5px;
 }
