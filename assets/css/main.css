@@ -275,7 +275,7 @@ header img:hover{
 }
 #text{
 	width: 240px;
-	display: block;
+	display: inline-block;
 	outline: none;
 	font-family: 'arial';
 	resize: none;
